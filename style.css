@@ -1,1 +1,66 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  display: grid;
+  place-items: center;
+
+  background: #111827;
+
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.game-wrap {
+  width: min(960px, 100vw);
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 10px 14px;
+
+  background: #0b1220;
+
+  font-weight: 700;
+  font-size: 16px;
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  background: #78c8ff;
+
+  image-rendering: pixelated;
+}
+
+.help {
+  text-align: center;
+
+  padding: 9px;
+
+  background: #0b1220;
+
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+
+  .hud {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
+  .help {
+    font-size: 12px;
+  }
+
+}
